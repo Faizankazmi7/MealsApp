@@ -1,148 +1,158 @@
 /* Set margin and padding to 0 for all elements */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body{
-    /* background-color: lightgray */
-}
-
-/* Style for header */
-header{
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+  }
+  
+  /* Style for header */
+  header {
     display: flex;
-    margin: 20px;
-}
-
-/* Style for logo image */
-#logo{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003931; /* Soft pastel gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Style for logo image */
+  #logo {
     height: 40px;
-}
-
-/* Style for header links */
-header a{
+    width: auto; /* Adjust image width */
+  }
+  
+  /* Style for header links */
+  header a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
     margin: 10px;
-}
-
-/* Style for header links on hover */
-header a:hover{
-    text-decoration: underline;
-}
-
-/* Style for container */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #edeef0;
-  border-radius: 30px;
-  padding-left: 20px;
-  margin-bottom: 25px;
-  max-width: 500px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Style for input field */
-input{
+    color: #5d5d5d; /* Dark gray link color */
+    transition: color 0.3s ease;
+  }
+  
+  /* Style for header links on hover */
+  header a:hover {
+    color: #ff5945; /* Accent color on hover (deep red) */
+  }
+  
+  /* Style for container */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f3f3; /* White background */
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 800px; /* Adjust max-width */
+    width: 90%; /* Adjust width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Style for input field */
+  input {
     flex: 1;
     border: none;
     outline: none;
     background: none;
     padding: 10px;
-}
-
-/* Style for button */
-button{
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Style for button */
+  button {
     border: none;
     outline: none;
-    padding: 16px 50px;
-    background: #ff5945;
-    color: white;
+    padding: 12px 30px; /* Adjust padding */
+    background: #ff5945; /* Accent color (deep red) for the button */
+    color: #fff; /* White button text color */
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-}
-
-/* Style for meal containers */
-.meal {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e63728; /* Darker red accent color on hover */
+  }
+  
+  /* Style for meal containers */
+  .meal {
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* Set background color */
-    /* background-color: lightgray */
-}
-
-/* Style for meal images */
-.meal img {
-    width: 50%;
-    max-height: 250px;
+    background-color: #fff; /* White background */
+  }
+  
+  /* Style for meal images */
+  .meal img {
+    width: 100%; /* Adjust image width */
+    max-height: 100px;
     object-fit: cover;
-    border-radius: 15px;
-}
-
-/* Style for meal headings */
-.meal h2 {
+    border-radius: 10px;
+  }
+  
+  /* Style for meal headings */
+  .meal h2 {
     margin: 10px 0;
     font-size: 24px;
     text-align: center;
-    color: red;
-}
-
-.meal ul {
+    color: #ff5945; /* Accent color (deep red) for the heading */
+  }
+  
+  .meal ul {
     list-style: none;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
-    /* ?margin-left: 20px; */
-}
-
-.meal li {
+  }
+  
+  .meal li {
     margin-bottom: 5px;
-}
-
-.meal button {
+  }
+  
+  .meal button {
     background-color: #fff;
-    border: none;
-    color: #ff5945;
-    padding: 10px;
+    border: 1px solid #ff5945; /* Accent color (deep red) for the button border */
+    color: #ff5945; /* Accent color (deep red) for the button text */
+    padding: 10px 20px; /* Adjust padding */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-}
-
-.meal button:hover {
-    background-color: #ddd;
-}
-
-.description {
-    display: none;
-}
+  }
   
-.show {
+  .meal button:hover {
+    background-color: #ff5945; /* Accent color (deep red) for the button background on hover */
+    color: #fff; /* White button text color on hover */
+  }
+  
+  .description {
+    display: none;
+  }
+  
+  .show {
     display: block;
-}
-
-p{
-    font-size: 20px;
-    margin-left: 10px;
-    word-spacing: 3px;
-    line-height: 35px;
+  }
+  
+  p {
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.6; /* Adjust line-height */
     text-align: justify;
-    color: blue;
-    background-color: orange;
+    color: #5d5d5d; /* Dark gray text color */
+    background-color: #f7f7f7; /* Light gray background for paragraphs */
     border-radius: 20px;
-    padding: 5px;
-    
-}
-
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
